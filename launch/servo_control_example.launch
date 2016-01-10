@@ -1,0 +1,9 @@
+<launch>
+  <!-- Used to launch servo control example -->
+  <!-- Load parameters -->
+  <rosparam command="load" file="$(find misc_examples)/params/servo_control_example.yaml" />
+  <!-- Launch joystick node -->
+  <node name="joystick" pkg="joy" type="joy_node" />
+  <!-- Launch our example node -->
+  <node pkg="misc_examples" type="serial_joy_to_servo.py" output="screen" name="JoyToServo" />
+</launch>

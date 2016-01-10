@@ -1,0 +1,12 @@
+# Parameters for servo control example
+arduino:
+  port: "/dev/ttyACM1"
+  baud: 9600
+joystick:
+  topic: "joy"
+  axis_thresh: 0.5
+servo:
+  max_angle: 150
+  min_angle: 5
+  increment: 5
+  initial_angle: 90
